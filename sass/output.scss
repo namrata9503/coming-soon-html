@@ -3,32 +3,58 @@ $mar:0;
 $background-white:#fff;
 
 $imglaunch:'images/img_bg_1_gradient.jpg';
-$img-height:100%;
-$img-width:100%;
+$img-height: 800px;
+$img-width:auto;
 
-$font-h1:6vh;
+$font-h1:4vh;
 $wieght-font:1000;
 $p-timer:15px;
 $p-color:#b0b0b0;
 $footer-pad:20px;
-
+$h1-size:300px;
 html,body{
     padding: $pad !important;
     margin: $mar !important;
 }
-
-.launcher{
-    background: url($imglaunch);
-    height:  $img-height;
-    width: $img-width;
-
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (min-width: 992px) {
+    .launcher {
+        background: url($imglaunch);
+        height:  $img-height;
+        width: $img-width;
+    }
+    
     .launcher-head{
         color: #fff;
         text-align: center;
         padding: 10px;
        font-weight: 800;
     }
-}
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .launcher {
+        background: url($imglaunch);
+        height:  300px;
+        width: $img-width;
+    }
+    
+    .launcher-head{
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+       font-weight: 800;
+    }
+    footer.icons{
+        position: relative;
+        left: 10px;
+        bottom: 0px;
+        padding: 10px;
+        color: #bfbfbf;
+    }
+  }
+
 .inline{
     display: inline-block; 
 
@@ -92,6 +118,7 @@ html,body{
     h1{
         font-size:$font-h1;
         font-weight: $wieght-font;
+        max-width: $h1-size;
     }
     p{
         color: $p-color;
@@ -127,7 +154,7 @@ html,body{
        
 }
 footer{
-    position: relative;
+    position: absolute;
     left: 10px;
     bottom: 0px;
     padding: 20px;

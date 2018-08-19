@@ -3,18 +3,44 @@ html, body {
   margin: 0 !important;
 }
 
-.launcher {
-  background: url("images/img_bg_1_gradient.jpg");
-  height: 100%;
-  width: 100%;
-}
-.launcher .launcher-head {
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  font-weight: 800;
-}
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (min-width: 992px) {
+  .launcher {
+    background: url("images/img_bg_1_gradient.jpg");
+    height: 800px;
+    width: auto;
+  }
 
+  .launcher-head {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-weight: 800;
+  }
+}
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .launcher {
+    background: url("images/img_bg_1_gradient.jpg");
+    height: 300px;
+    width: auto;
+  }
+
+  .launcher-head {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-weight: 800;
+  }
+
+  footer.icons {
+    position: relative;
+    left: 10px;
+    bottom: 0px;
+    padding: 10px;
+    color: #bfbfbf;
+  }
+}
 .inline {
   display: inline-block;
 }
@@ -28,7 +54,7 @@ html, body {
   top: 30px;
 }
 .timer .days h1 {
-  font-size: 6vh;
+  font-size: 4vh;
   font-weight: 1000;
 }
 .timer .days p {
@@ -40,7 +66,7 @@ html, body {
   top: 30px;
 }
 .timer .hrs h1 {
-  font-size: 6vh;
+  font-size: 4vh;
   font-weight: 1000;
 }
 .timer .hrs p {
@@ -52,7 +78,7 @@ html, body {
   top: 30px;
 }
 .timer .mins h1 {
-  font-size: 6vh;
+  font-size: 4vh;
   font-weight: 1000;
 }
 .timer .mins p {
@@ -64,7 +90,7 @@ html, body {
   top: 30px;
 }
 .timer .secs h1 {
-  font-size: 6vh;
+  font-size: 4vh;
   font-weight: 1000;
 }
 .timer .secs p {
@@ -76,8 +102,9 @@ html, body {
   margin-top: 130px;
 }
 .launch h1 {
-  font-size: 6vh;
+  font-size: 4vh;
   font-weight: 1000;
+  max-width: 300px;
 }
 .launch p {
   color: #b0b0b0;
@@ -109,7 +136,7 @@ html, body {
 }
 
 footer {
-  position: relative;
+  position: absolute;
   left: 10px;
   bottom: 0px;
   padding: 20px;
