@@ -1,0 +1,84 @@
+$pad:0;
+$mar:0;
+$background-white:#fff;
+
+$imglaunch:'images/img_bg_1_gradient.jpg';
+$img-height:800px;
+$img-width:500px;
+
+$font-h1:50px;
+$wieght-font:1000;
+$p-timer:15px;
+
+body{
+    padding: $pad !important;
+    margin: $mar !important;
+}
+
+.launcher{
+    background: url($imglaunch);
+    height:  $img-height;
+    width: $img-width;
+
+    .launcher-head{
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+       font-weight: 800;
+    }
+}
+.inline{
+    display: inline-block; 
+    text-align: center;
+
+}
+.timer{
+    display: inline-block;
+    // background-color:  $background-white;
+    .days{
+        margin-left: 130px;
+        margin-top: 30px;
+        h1{
+            font-size:$font-h1;
+            font-weight: $wieght-font;
+        }
+        p{
+            font-size: $p-timer;
+        }
+       
+    }
+    .hrs{
+        margin-left: 50px;
+    margin-top: 30px;
+    h1{
+        font-size:$font-h1;
+        font-weight: $wieght-font;
+    }
+    p{
+        font-size: $p-timer;
+    }
+    }
+    .mins{
+        margin-left: 70px;
+    margin-top: 30px;
+    h1{
+        font-size:$font-h1;
+        font-weight: $wieght-font;
+    }
+    p{
+        font-size: $p-timer;
+    }
+    }
+    .secs{
+        margin-left: 90px;
+    margin-top: 30px;
+    h1{
+        font-size:$font-h1;
+        font-weight: $wieght-font;
+    }
+    p{
+        font-size: $p-timer;
+    }
+    }
+}
+

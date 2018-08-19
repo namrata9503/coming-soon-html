@@ -1,0 +1,71 @@
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.launcher {
+  background: url("images/img_bg_1_gradient.jpg");
+  height: 800px;
+  width: 500px;
+}
+.launcher .launcher-head {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-weight: 800;
+}
+
+.inline {
+  display: inline-block;
+  text-align: center;
+}
+
+.timer {
+  display: inline-block;
+}
+.timer .days {
+  margin-left: 130px;
+  margin-top: 30px;
+}
+.timer .days h1 {
+  font-size: 50px;
+  font-weight: 1000;
+}
+.timer .days p {
+  font-size: 15px;
+}
+.timer .hrs {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.timer .hrs h1 {
+  font-size: 50px;
+  font-weight: 1000;
+}
+.timer .hrs p {
+  font-size: 15px;
+}
+.timer .mins {
+  margin-left: 70px;
+  margin-top: 30px;
+}
+.timer .mins h1 {
+  font-size: 50px;
+  font-weight: 1000;
+}
+.timer .mins p {
+  font-size: 15px;
+}
+.timer .secs {
+  margin-left: 90px;
+  margin-top: 30px;
+}
+.timer .secs h1 {
+  font-size: 50px;
+  font-weight: 1000;
+}
+.timer .secs p {
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=main.css.map */
