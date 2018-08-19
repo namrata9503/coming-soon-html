@@ -68,4 +68,34 @@ body {
   font-size: 15px;
 }
 
+.launch {
+  margin-left: 130px !important;
+  margin-top: 30px;
+}
+.launch h1 {
+  font-size: 50px;
+  font-weight: 1000;
+}
+.launch p {
+  color: #b0b0b0;
+  font-size: 15px;
+  text-align: justify;
+  max-width: 400px;
+}
+.launch div.email-box {
+  height: 47px;
+  max-width: 380px;
+}
+.launch div.email-box input {
+  border-radius: 5000px 0 0 5000px;
+  padding-left: 1rem;
+  background-color: #eeeeee;
+}
+.launch div.email-box .send-btn span {
+  border-radius: 0 5000px 5000px 0;
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: #0cb3e2 !important;
+}
+
 /*# sourceMappingURL=main.css.map */
