@@ -3,16 +3,16 @@ $mar:0;
 $background-white:#fff;
 
 $imglaunch:'images/img_bg_1_gradient.jpg';
-$img-height:800px;
-$img-width:500px;
+$img-height:100%;
+$img-width:100%;
 
-$font-h1:50px;
+$font-h1:6vh;
 $wieght-font:1000;
 $p-timer:15px;
 $p-color:#b0b0b0;
 $footer-pad:20px;
 
-body{
+html,body{
     padding: $pad !important;
     margin: $mar !important;
 }
@@ -31,15 +31,15 @@ body{
 }
 .inline{
     display: inline-block; 
-    text-align: center;
 
 }
 .timer{
-    
+    position: relative;
     // background-color:  $background-white;
     .days{
-        margin-left: 130px;
-        margin-top: 30px;
+        position: absolute;
+    left: 30px;
+    top: 30px;
         h1{
             font-size:$font-h1;
             font-weight: $wieght-font;
@@ -50,8 +50,9 @@ body{
        
     }
     .hrs{
-        margin-left: 50px;
-    margin-top: 30px;
+        position: absolute;
+        left: 120px;
+        top: 30px;
     h1{
         font-size:$font-h1;
         font-weight: $wieght-font;
@@ -61,8 +62,9 @@ body{
     }
     }
     .mins{
-        margin-left: 70px;
-    margin-top: 30px;
+        position: absolute;
+        left: 190px;
+        top: 30px;
     h1{
         font-size:$font-h1;
         font-weight: $wieght-font;
@@ -72,8 +74,9 @@ body{
     }
     }
     .secs{
-        margin-left: 90px;
-    margin-top: 30px;
+        position: absolute;
+        left: 280px;
+        top: 30px;
     h1{
         font-size:$font-h1;
         font-weight: $wieght-font;
@@ -84,8 +87,8 @@ body{
     }
 }
 .launch{
-    margin-left: 130px !important;
-    margin-top: 30px;
+    margin-left: 30px !important;
+    margin-top: 130px;
     h1{
         font-size:$font-h1;
         font-weight: $wieght-font;
@@ -124,10 +127,10 @@ body{
        
 }
 footer{
-    position: absolute;
-    left: 150px;
+    position: relative;
+    left: 10px;
     bottom: 0px;
-    padding: $footer-pad;
+    padding: 20px;
     color: #bfbfbf;
 }
 

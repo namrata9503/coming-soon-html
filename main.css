@@ -1,12 +1,12 @@
-body {
+html, body {
   padding: 0 !important;
   margin: 0 !important;
 }
 
 .launcher {
   background: url("images/img_bg_1_gradient.jpg");
-  height: 800px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
 }
 .launcher .launcher-head {
   color: #fff;
@@ -17,48 +17,54 @@ body {
 
 .inline {
   display: inline-block;
-  text-align: center;
 }
 
+.timer {
+  position: relative;
+}
 .timer .days {
-  margin-left: 130px;
-  margin-top: 30px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
 }
 .timer .days h1 {
-  font-size: 50px;
+  font-size: 6vh;
   font-weight: 1000;
 }
 .timer .days p {
   font-size: 15px;
 }
 .timer .hrs {
-  margin-left: 50px;
-  margin-top: 30px;
+  position: absolute;
+  left: 120px;
+  top: 30px;
 }
 .timer .hrs h1 {
-  font-size: 50px;
+  font-size: 6vh;
   font-weight: 1000;
 }
 .timer .hrs p {
   font-size: 15px;
 }
 .timer .mins {
-  margin-left: 70px;
-  margin-top: 30px;
+  position: absolute;
+  left: 190px;
+  top: 30px;
 }
 .timer .mins h1 {
-  font-size: 50px;
+  font-size: 6vh;
   font-weight: 1000;
 }
 .timer .mins p {
   font-size: 15px;
 }
 .timer .secs {
-  margin-left: 90px;
-  margin-top: 30px;
+  position: absolute;
+  left: 280px;
+  top: 30px;
 }
 .timer .secs h1 {
-  font-size: 50px;
+  font-size: 6vh;
   font-weight: 1000;
 }
 .timer .secs p {
@@ -66,11 +72,11 @@ body {
 }
 
 .launch {
-  margin-left: 130px !important;
-  margin-top: 30px;
+  margin-left: 30px !important;
+  margin-top: 130px;
 }
 .launch h1 {
-  font-size: 50px;
+  font-size: 6vh;
   font-weight: 1000;
 }
 .launch p {
@@ -103,8 +109,8 @@ body {
 }
 
 footer {
-  position: absolute;
-  left: 150px;
+  position: relative;
+  left: 10px;
   bottom: 0px;
   padding: 20px;
   color: #bfbfbf;
