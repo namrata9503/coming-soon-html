@@ -20,9 +20,6 @@ body {
   text-align: center;
 }
 
-.timer {
-  display: inline-block;
-}
 .timer .days {
   margin-left: 130px;
   margin-top: 30px;
@@ -96,6 +93,21 @@ body {
   font-size: 0.8rem;
   color: #fff;
   background-color: #0cb3e2 !important;
+}
+.launch .email-warning {
+  color: #b0b0b0;
+  font-size: 15px;
+  text-align: justify;
+  max-width: 400px;
+  margin-left: 20px;
+}
+
+footer {
+  position: absolute;
+  left: 150px;
+  bottom: 0px;
+  padding: 20px;
+  color: #bfbfbf;
 }
 
 /*# sourceMappingURL=main.css.map */

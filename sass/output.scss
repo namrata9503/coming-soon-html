@@ -10,6 +10,7 @@ $font-h1:50px;
 $wieght-font:1000;
 $p-timer:15px;
 $p-color:#b0b0b0;
+$footer-pad:20px;
 
 body{
     padding: $pad !important;
@@ -34,7 +35,7 @@ body{
 
 }
 .timer{
-    display: inline-block;
+    
     // background-color:  $background-white;
     .days{
         margin-left: 130px;
@@ -113,7 +114,23 @@ body{
                 background-color: #0cb3e2 !important;
             }
         }
+        .email-warning{
+            color: $p-color;
+        font-size: $p-timer;
+        text-align: justify;
+        max-width: 400px;
+        margin-left: 20px;
+        }
+       
 }
+footer{
+    position: absolute;
+    left: 150px;
+    bottom: 0px;
+    padding: $footer-pad;
+    color: #bfbfbf;
+}
+
 
 
 
