@@ -29,6 +29,7 @@ html,body{
         text-align: center;
         padding: 10px;
        font-weight: 800;
+       
     }
   }
   
@@ -45,6 +46,12 @@ html,body{
         text-align: center;
         padding: 10px;
        font-weight: 800;
+    }
+    .launch .h1-size{
+        font-size:3vh;
+        font-weight: $wieght-font;
+        max-width: $h1-size;
+        width: 600px;
     }
     footer.icons{
         position: relative;
@@ -120,6 +127,7 @@ html,body{
         font-size:$font-h1;
         font-weight: $wieght-font;
         max-width: $h1-size;
+        width: 600px;
     }
     p{
         color: $p-color;
